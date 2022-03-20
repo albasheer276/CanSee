@@ -16,8 +16,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
-import com.rommansabbir.animationx.Zoom
-import com.rommansabbir.animationx.animationXZoom
 import dagger.hilt.android.AndroidEntryPoint
 import it.cansee.com.R
 import it.cansee.com.activity.MainActivity
@@ -41,20 +39,9 @@ class OTPFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         mBinding = FragmentOTPBinding.inflate(inflater)
-        // start animation of views
-        startAnimation()
         // get storedVerificationId from the intent
         storedVerificationId = args.verificationId
         return mBinding.root
-    }
-
-    /**
-     * Start animation of the views
-     */
-    private fun startAnimation() {
-        with(mBinding) {
-            otpTxtTitle.animationXZoom(Zoom.ZOOM_IN_UP, 800)
-        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

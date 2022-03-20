@@ -14,7 +14,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
-import com.rommansabbir.animationx.*
 import dagger.hilt.android.AndroidEntryPoint
 import it.cansee.com.databinding.FragmentLoginBinding
 import java.util.concurrent.TimeUnit
@@ -73,8 +72,6 @@ class LoginFragment : Fragment() {
 
         // Inflate the layout for this fragment
         mBinding = FragmentLoginBinding.inflate(inflater)
-        // start animation of views
-        startAnimation()
 
         return mBinding.root
     }
@@ -84,16 +81,6 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_setupProfileFragment)
             Log.d(_tag, "checkLogin: ${auth.currentUser!!.uid}")
         }
-    }
-
-    /**
-     * Start animation of the views
-     */
-    private fun startAnimation() {
-        with(mBinding) {
-            loginTxtTitle.animationXZoom(Zoom.ZOOM_IN_UP, 800)
-        }
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
