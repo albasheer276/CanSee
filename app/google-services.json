@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "817693008219",
+    "project_id": "cansee-v1",
+    "storage_bucket": "cansee-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817693008219:android:4825d5bb590e6bd03c3a7e",
+        "android_client_info": {
+          "package_name": "it.cansee.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817693008219-l8iarqep323i1emq47296apneurp4pph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_29Um8K_9R0ASgQyIchoc-o-_0Obupk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817693008219-l8iarqep323i1emq47296apneurp4pph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
